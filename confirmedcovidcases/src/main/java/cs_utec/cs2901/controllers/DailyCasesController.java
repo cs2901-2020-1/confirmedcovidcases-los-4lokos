@@ -18,6 +18,7 @@ public class DailyCasesController {
 
     @PostMapping
     public DailyCases create(@RequestBody DailyCases dailyCases ){
+        System.out.println("ejecutado");
         return business.create(dailyCases);
     }
 

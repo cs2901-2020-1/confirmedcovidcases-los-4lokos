@@ -18,16 +18,16 @@ public class DailyCases implements Serializable {
     @Column
     private Integer cantidad;
 
-    @Column
+    /*@Column
     private Date fecha;
-
+*/
     public DailyCases() {
     }
 
     public DailyCases(Long id, Integer cantidad, Date fecha) {
         this.id = id;
         this.cantidad = cantidad;
-        this.fecha = fecha;
+//        this.fecha = fecha;
     }
 
     public Long getId() {
@@ -46,11 +46,11 @@ public class DailyCases implements Serializable {
         this.cantidad = cantidad;
     }
 
-    public Date getFecha() {
+  /*  public Date getFecha() {
         return fecha;
     }
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
-    }
+    }*/
 }
